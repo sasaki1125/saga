@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bonjoursagan</title>
+</head>
+<body>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body{
+      max-width: 1000px;
+      width: 100%;
+      height: 100%;
+      margin: 50px auto;
+    }
+    header h1 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .conA .container{
+      width: 100%;
+      height: 100vh;
+    }
+    .conA img{
+      width: 100%;
+      height: 100%;
+      box-shadow: 15px 15px 0px 0 rgb(60, 194, 235);
+    }
+    .conB .container{
+      width: 100%;
+    }
+    .ex1 .head{
+      font-size: 38px;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+    }
+    .ex1 .head::before{
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 27px;
+      left: -100px;
+    }
+    .ex1 .head::after{
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 27px;
+      right: -100px;
+    }
+    .cnbTitle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+    }
+    .cnbTitle:before,
+    .cnbTitle:after{
+      border-top: 1px solid;
+      content: "";
+      flex-grow: 1;
+    }
+    .cnbTitle:before{
+      margin-right: 3rem;
+    }
+    .cnbTitle:after{
+      margin-left: 3rem;
+    }
+    .conC .container{
+      width: 100%;
+      height: 100vh;
+      background-color:#EEEEEE;
+    }
+    .conC img{
+      width: 80%;
+      height: 70%;
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    }
+    .conC .wrapper{
+      display: flex;
+    }
+    .conC .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .conC .itemBox{
+      display: flex;
+      flex-direction: column;
+    }
+    .conC span{
+      color: red;
+    }
+    .conD .container{
+      width: 100%;
+      height: 100vh;
+      margin-top: 5%;
+      background-color: #EEEEEE;
+    }
+    .conD img{
+      width: 80%;
+      height: 70%;
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    }
+    .conD .wrapper{
+      display: flex;
+    }
+    .conD .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .conD .itemBox{
+      display: flex;
+      flex-direction: column;
+    }
+    .conD span{
+      color: red;
+    }
+    button{
+      display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      background: #fff;/*ボタン色*/
+      color: #000;/*ボタン色と同じに*/
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+      border-bottom: solid 3px rgb(60, 194, 235);
+      border-radius: 3px;/*角の丸み*/
+      font-weight: bold;
+      text-shadow: -1px -1px rgba(255, 255, 255, 0.44);
+    }
+    button:hover{
+      
+    }
+
+
+
+    @media (max-width: 480px){
+      body{
+      max-width: 370px;
+    }
+      .conA .container{
+      height: 50vh;
+    }
+     button{
+      width: 150px;
+    }
+    .conC .container{
+      height: 70vh;
+    }
+    .conD .container{
+      height: 70vh;
+    }
+    }
+  </style>
+  
+  
+  <header>
+    <h1>BONJOUR SAGAN</h1>
+  </header>
+  
+  <section class="conA">
+    <div class="container">
+      <img src="./img/0A4E1302-42F8-4FBD-A07B-973DE169B185.jpg" alt="Image">
+    </div>
+  </section>
+  
+  <section class="conB">
+    <div class="container">
+      <div class="cnbTitle">
+        <h2>NEW ITEM</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="conC">
+    <div class="container">
+      <h3>01：先取り先行予約</h3>
+
+      <div class="wrapper">
+        <div class="item">
+          <img src="./img/4D3E20E2-A48A-4A82-9250-C15EE67B3FC2.jpg" alt="">
+          <div class="itemBox">
+            <p>【シアータートルブルオーバー】<br>
+              通常価格¥3,190<br>
+              <span>有料会員様価格¥1,650（51%OFF）</span></p>
+              <button onclick="location.href='/'">商品はこちら→</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./img/7267C736-3DE4-4C18-AF4A-7346A4385B6D.jpg" alt="">
+          <div class="itemBox">
+            <p>【シアータートルブルオーバー】<br>
+              通常価格¥3,190<br>
+              <span>有料会員様価格¥1,650（51%OFF）</span></p>
+              <button onclick="location.href='/'">商品はこちら→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conD">
+    <div class="container">
+      <h3>02：新商品</h3>
+
+      <div class="wrapper">
+        <div class="item">
+          <img src="./img/4D3E20E2-A48A-4A82-9250-C15EE67B3FC2.jpg" alt="">
+          <div class="itemBox">
+            <p>【シアータートルブルオーバー】<br>
+            通常価格¥3,190<br>
+            <span>有料会員様価格¥1,650（51%OFF）</span></p>
+            <button onclick="location.href='/'">商品はこちら→</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./img/7267C736-3DE4-4C18-AF4A-7346A4385B6D.jpg" alt="">
+          <div class="itemBox">
+            <p>【シアータートルブルオーバー】<br>
+              通常価格¥3,190<br>
+              <span>有料会員様価格¥1,650（51%OFF）</span></p>
+              <button onclick="location.href='/'">商品はこちら→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    
+  </footer>
+
+</body>
+</html>
